@@ -1,0 +1,62 @@
+/* Lo hacemos responsive:  */
+
+/*Vista tablet*/
+
+/*768px hasta 1023px*/
+
+@media (max-width: 1023px) {
+    /*Header*/
+
+    .encabezado {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+
+        .boton {
+            display: none;
+        }
+    }
+
+    /*Banner*/
+
+    .bannerContenido p {
+        font-size: 2.5rem;
+    }
+
+    /*Talleres*/
+
+    .talleres {
+        margin: 5vh;
+        font-size: 2rem;
+
+        h3,
+        p {
+            font-size: inherit;
+        }
+    }
+
+    .contenedorTalleres {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*Alumnos*/
+
+    .contenedorAlumnos {
+        flex-direction: column;
+    }
+
+    /*Footer*/
+
+    .footerContenido {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /*Destinos */
+
+    .contenedorTalleres {
+        grid-template-columns: 1fr;
+    }
+}

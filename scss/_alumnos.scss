@@ -1,0 +1,37 @@
+/*Alumnos*/
+
+.contenedorAlumnos {
+    display: flex;
+    margin: 10vh;
+}
+
+.storieAlumnos {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background-color: $color-naranja;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px 5px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+
+    h3 {
+        margin: 20px 5px;
+    }
+}
+
+.colorAlumno1 {
+    color: #b78630;
+}
+
+.colorAlumno2 {
+    color: #82d61c;
+}
+
+.colorAlumno3 {
+    color: #309adbeb;
+}

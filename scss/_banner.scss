@@ -1,0 +1,75 @@
+
+@mixin banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Banner */
+
+.banner {
+    background-image: url("../img/Banner.jpg");
+    height: calc(100vh - 100px);
+    @include banner; 
+
+    &::after {
+        width: 100%;
+        height: 100%;
+        content: "";
+        background-color: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+}
+
+.bannerContenido {
+    padding: 30px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        color: $color-blanco;
+        margin-bottom: 10px;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    p {
+        color: $color-blanco;
+        font-family: 'Rubik Mono One', sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .boton {
+        margin-top: 20px;
+    }
+}
+
+.article1 h4 {
+    display: flex;
+    padding: 25px;
+    color: #1e272e;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.p2 {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.article1 iframe {
+    padding: 30px;
+}
